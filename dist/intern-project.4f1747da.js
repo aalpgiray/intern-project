@@ -164,8 +164,8 @@ var DataStore_1 = __importDefault(require("./DataStore/DataStore"));
 var entry = document.getElementById('app');
 if (entry == null) throw 'Entry not found';
 var dataStore = new DataStore_1["default"](localStorage);
-var appInstance = new App_1["default"](entry, dataStore);
-appInstance.render();
+var app = new App_1["default"](entry, dataStore);
+app.render();
 },{"./App/App":7,"./DataStore/DataStore":8}],13:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

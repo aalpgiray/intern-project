@@ -8,6 +8,6 @@ if (entry == null) throw 'Entry not found';
 
 var dataStore = new DataStore(localStorage);
 
-var appInstance = new App(entry, dataStore);
+var app = new App(entry, dataStore);
 
-appInstance.render();
+app.render();
